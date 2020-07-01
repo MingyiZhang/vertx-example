@@ -21,7 +21,7 @@ public class HelloWorldVerticle extends AbstractVerticle {
   }
 
   @Override
-  public void start(Promise<Void> future) throws Exception {
+  public void start(Promise<Void> startPromise) throws Exception {
     vertx
         .createHttpServer()
         .requestHandler(r -> r.response().end("Hi there Vert.x!"))
@@ -29,9 +29,9 @@ public class HelloWorldVerticle extends AbstractVerticle {
             8080,
             result -> {
               if (result.succeeded()) {
-                future.complete();
+                startPromise.complete();
               } else {
-                future.fail(result.cause());
+                startPromise.fail(result.cause());
               }
             });
   }
