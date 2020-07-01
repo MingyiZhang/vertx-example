@@ -1,8 +1,26 @@
+plugins {
+    id 'java'
+    id 'io.vertx.vertx-plugin' version '1.1.1' apply false
+}
+
 allprojects {
     group 'dev.mingyizhang.vertx'
     version '1.0-SNAPSHOT'
 
     repositories {
         mavenCentral()
+    }
+}
+
+subprojects {
+    apply plugin: 'io.vertx.vertx-plugin'
+
+    vertx {
+        vertxVersion = '3.9.1'
+    }
+
+    dependencies {
+        implementation 'io.vertx:vertx-core'
+        testImplementation 'io.vertx:vertx-junit5'
     }
 }
