@@ -6,8 +6,9 @@ import io.vertx.core.logging.LoggerFactory;
 
 public class HelloWorldVerticle extends AbstractVerticle {
 
+  final static Logger logger = LoggerFactory.getLogger(HelloWorldVerticle.class);
+
   public static void main(String[] args) {
-    final Logger logger = LoggerFactory.getLogger(HelloWorldVerticle.class);
     final Vertx vertx = Vertx.vertx();
     vertx.deployVerticle(
         new HelloWorldVerticle(),

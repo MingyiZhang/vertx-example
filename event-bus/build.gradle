@@ -1,0 +1,7 @@
+vertx {
+    mainVerticle = 'EventBusVerticle'
+}
+
+dependencies {
+    implementation 'io.vertx:vertx-web'
+}
