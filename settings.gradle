@@ -1,4 +1,5 @@
 rootProject.name = 'vertx-example'
 include 'hello-world'
+include 'hello-world-rxjava'
 include 'event-bus'
 

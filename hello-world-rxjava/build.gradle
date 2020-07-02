@@ -1,0 +1,8 @@
+vertx {
+    mainVerticle = 'HelloWorldRxJavaVerticle'
+}
+
+dependencies {
+    implementation 'io.vertx:vertx-web'
+    implementation 'io.vertx:vertx-rx-java2'
+}
