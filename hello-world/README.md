@@ -21,3 +21,4 @@ and
 java -jar ./build/libs/hello-world-1.0-SNAPSHOT-all.jar
 ```
 
+A response of `Hi there Vert.x!` can be found in `localhost:8080` through browser.
