@@ -17,7 +17,6 @@ The first instance accepts odd numbers while the second accepts even numbers, an
 ```
 
 ## To compile and run `.jar`
-In the root directory, run
 ```shell script
 ../gradlew clean build
 ```

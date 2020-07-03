@@ -12,7 +12,6 @@ This simple example shows how to send messages between verticles using event bus
 ```
 
 ## To compile and run `.jar`
-In the root directory, run
 ```shell script
 ../gradlew clean build
 ```

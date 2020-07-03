@@ -12,7 +12,6 @@ This simple example shows how to create an HTTP server and how to write to respo
 ```
 
 ## To compile and run `.jar`
-In the root directory, run
 ```shell script
 ../gradlew clean build
 ```
